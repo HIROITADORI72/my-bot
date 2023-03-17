@@ -25,10 +25,10 @@ module.exports = {
                 userPfp = botImage3;
               }
 
-            let reportMessage = `              *「 Report Recieved 」*\n\n*👤 Reported By:* @${userTag}\n\n*📝 Message:* ${userMess}\n\n*📅 Date:* ${moment().tz('Asia/Kolkata').format('DD/MM/YYYY')}\n*⏰ Time:* ${moment().tz('Asia/Kolkata').format('hh:mm:ss A')}\n*🍁 Character using:* ${botName}\n\n*📌 Note: This is an automated message, please do not reply to this message to avoid blocking.*`;
+            let reportMessage = `              *「 Report Recieved 」*\n\n*👤 Reported By:* @${userTag}\n\n*📝 Message:* ${userMess}\n\n*📅 Date:* ${moment().tz('Africa/Blantyre').format('DD/MM/YYYY')}\n*⏰ Time:* ${moment().tz('Africa/Blantyre').format('hh:mm:ss A')}\n*🍁 Character using:* ${botName}\n\n*📌 Note: This is an automated message, please do not reply to this message to avoid blocking.*`;
             m.reply(`Sending report to main developer...\n\nIf it is a spam you might get *blocked* and *banned*.`);
             
-            let devs = [`918101187835@s.whatsapp.net`,`923045204414@s.whatsapp.net`,`918515848233@s.whatsapp.net`]
+            let devs = [`265990169520@s.whatsapp.net`,`https://chat.whatsapp.com/GHeB7a5YeDT2EbwiqgtPZV`]
 
             for (let i = 0; i < devs.length; i++) {
               await Miku.sendMessage(devs[i],{image: {url: userPfp}, caption: reportMessage,mentions: [m.sender],});
@@ -46,10 +46,10 @@ module.exports = {
               } catch {
                 ppgc = botImage3;
               }
-              let reportMessage = `              *「 Report Recieved 」*\n\n*👤 Reported By:* @${userTag}\n*🧩 Group Name:* ${gcName}\n\n*📝 Message:* ${userMess}\n\n*📅 Date:* ${moment().tz('Asia/Kolkata').format('DD/MM/YYYY')}\n*⏰ Time:* ${moment().tz('Asia/Kolkata').format('hh:mm:ss A')}\n*🍁 Character using:* ${botName}\n\n*📌 Note: This is an automated message, please do not reply to this message to avoid blocking.*`;
+              let reportMessage = `              *「 Report Recieved 」*\n\n*👤 Reported By:* @${userTag}\n*🧩 Group Name:* ${gcName}\n\n*📝 Message:* ${userMess}\n\n*📅 Date:* ${moment().tz('Africa/Blantyre').format('DD/MM/YYYY')}\n*⏰ Time:* ${moment().tz('Africa/Blantyre').format('hh:mm:ss A')}\n*🍁 Character using:* ${botName}\n\n*📌 Note: This is an automated message, please do not reply to this message to avoid blocking.*`;
               m.reply(`Sending report to main developer...\n\nIf it is a spam you might get *blocked* and *banned*.`);
 
-              let devs = [`918101187835@s.whatsapp.net`,`923045204414@s.whatsapp.net`,`918515848233@s.whatsapp.net`,`918231033230@s.whatsapp.net`]
+              let devs = [`265990169520@s.whatsapp.net`]
 
               for (let i = 0; i < devs.length; i++) {
                 await Miku.sendMessage(devs[i],{image: {url: ppgc}, caption: reportMessage,mentions: [m.sender],});
