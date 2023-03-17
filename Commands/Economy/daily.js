@@ -21,7 +21,7 @@ module.exports = {
          if (!m.isGroup) return Miku.sendMessage(m.from, { text: '*Group command ' }, { quoted: m });
          let user = m.sender 
          const cara = "cara"
-         const daily  = await eco.daily(user, cara, 500); //give 500 for daily, can be changed
+         const daily  = await eco.daily(user, cara, 3500); //give 500 for daily, can be changed
          if(daily.cd) {
 
             let buttons = [
