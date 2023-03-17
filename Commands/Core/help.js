@@ -56,11 +56,11 @@ module.exports = {
 
       let textHelpMenu = `Konnichiwa *${pushName}* Senpai,
 
-I am *${botName}*, a bot developed by *Team Atlas*.
+I am *${botName}*, a bot developed by *Team CELESTIC🧧*.
 
-🎀 My prefix is: *${prefix}*
+🏮 My prefix is: *${prefix}*
 
-🧩 Server Uptime: *${uptime()}*
+⛩️ Server Uptime: *${uptime()}*
 
 Here's the list of my Commands.\n
            
@@ -275,8 +275,8 @@ Here's the list of my Commands.\n
 ╰──────────────────╯\n\n`;
       }
 
-      textHelpMenu += `*🔰  ${botName}  🔰*
- _Powered By:_ *Team ATLAS*
+      textHelpMenu += `*🎋  CELESTIC-MODZ  🎋*
+ _Powered By:_ *Team CELESTIC*
 
 🎀 To use any of these commands type " *${prefix}Command name* ".
 
@@ -573,7 +573,7 @@ Here's the list of my Commands.\n
         gifPlayback: true,
         caption: textHelpMenu,
         buttons: buttons,
-        footer: `*${botName}*`,
+        footer: `Celestic Botz `,
         headerType: 4,
       };
 
