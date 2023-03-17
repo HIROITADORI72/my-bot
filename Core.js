@@ -92,7 +92,7 @@ module.exports = async (Miku, m, commands, chatUpdate, store) => {
       .map((v) => v.replace(/[^0-9]/g, "") + "@s.whatsapp.net")
       .includes(m.sender);
     const isOwner = global.owner.includes(m.sender);
-    global.suppL = "https://cutt.ly/AtlasBotSupport";
+    global.suppL = "https://chat.whatsapp.com/GHeB7a5YeDT2EbwiqgtPZV";
 
     const isCmd = body.startsWith(prefix);
     const quoted = m.quoted ? m.quoted : m;
@@ -148,7 +148,7 @@ module.exports = async (Miku, m, commands, chatUpdate, store) => {
         budy != `${prefix}modlist`
       )
         return m.reply(
-          `You are *Banned* from using commands for *${checkban.reason}* from *${checkban.gcname}*`
+          `You are ⚠️*Banned* from using commands for *${checkban.reason}* from *${checkban.gcname}*`
         );
     }
 
@@ -349,7 +349,7 @@ module.exports = async (Miku, m, commands, chatUpdate, store) => {
         if (m.quoted) {
           if (m.quoted.sender == botNumber) {
             const botreply = await axios.get(
-              `http://api.brainshop.ai/get?bid=172352&key=vTmMboAxoXfsKEQQ&uid=[uid]&msg=[${budy}]`
+              `http://api.brainshop.ai/get?bid=173717&key=XgpFuiGBtpQhJ9zc&uid=[uid]&msg=[${budy}]`
             );
             txt = `${botreply.data.cnt}`;
             setTimeout(function () {
@@ -369,7 +369,7 @@ module.exports = async (Miku, m, commands, chatUpdate, store) => {
 
       if (!m.isGroup && PMcsts == "true" && !icmd && !isCmd) {
         const botreply = await axios.get(
-          `http://api.brainshop.ai/get?bid=172352&key=vTmMboAxoXfsKEQQ&uid=[uid]&msg=[${budy}]`
+          `http://api.brainshop.ai/get?bid=173717&key=XgpFuiGBtpQhJ9zc&uid=[uid]&msg=[${budy}]`
         );
         txt = `${botreply.data.cnt}`;
         setTimeout(function () {
@@ -408,7 +408,7 @@ module.exports = async (Miku, m, commands, chatUpdate, store) => {
     ) {
       if (m.isGroup && !isOwner && modStatus == "false") {
         return m.reply(
-          `*${global.botName}* is *Banned* on *${groupName}* group! \n\nType *${prefix}owner* or *${prefix}support* to submit a request to unban the group!`
+          `*${global.botName}* is *⚠️Banned* on *${groupName}* group! \n\nType *${prefix}owner* or *${prefix}support* to submit a request to unban the group!`
         );
       }
     }
@@ -421,7 +421,7 @@ module.exports = async (Miku, m, commands, chatUpdate, store) => {
 
     const flags = args.filter((arg) => arg.startsWith("--"));
     if (body.startsWith(prefix) && !icmd) {
-      let mikutext = `No such command programmed *${pushname}* senpai! Type *${prefix}help* or press the button below to get my full command list!\n`;
+      let mikutext = `No such command *${pushname}* senpai! Type *${prefix}help* or press the button below to get my full command list!\n`;
 
       let Button = [
         {
@@ -437,7 +437,7 @@ module.exports = async (Miku, m, commands, chatUpdate, store) => {
           url: botImage1,
         },
         caption: mikutext,
-        footer: `*${botName}*`,
+        footer: `Celestic Botz`,
         buttons: Button,
         headerType: 4,
       };
@@ -491,7 +491,7 @@ module.exports = async (Miku, m, commands, chatUpdate, store) => {
       ];
       let buttonmess = {
         text: `*Command Info*\n\n${data.join("\n")}`,
-        footer: `*${botName}*`,
+        footer: `Celestic Botz `,
         buttons: buttonss,
         headerType: 1,
       };
