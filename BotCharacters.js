@@ -67,12 +67,12 @@ Don't forget to change "charlist.js" and "setchar.js" insdide "Commands\Mods\"  
 
 
 global.charID0 = {
-    botName : "Atlas MD",
-    botVideo : "https://graph.org/file/e3b2ee218b98b8679bf98.mp4",
-    botImage1 : "https://i.imgur.com/MClOeqe.jpeg",
-    botImage2 : "https://i.imgur.com/MClOeqe.jpeg",
-    botImage3 : "https://i.imgur.com/MClOeqe.jpeg",
-    botImage4 : "https://i.imgur.com/MClOeqe.jpeg",
+    botName : "Chifuyu",
+    botVideo : "https://graph.org/Chifuyu-03-17",
+    botImage1 : "https://wall.alphacoders.com/big.php?i=1167144",
+    botImage2 : "https://wall.alphacoders.com/big.php?i=1305234",
+    botImage3 : "https://wall.alphacoders.com/big.php?i=1155002",
+    botImage4 : "https://wall.alphacoders.com/big.php?i=1152797",
     botImage5 : "https://i.imgur.com/MClOeqe.jpeg",
     botImage6 : "https://i.imgur.com/MClOeqe.jpeg",
 }
